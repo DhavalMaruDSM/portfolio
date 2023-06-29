@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaval Maru Portfolio | Full Stack Web Developer | Graphic Designer</title>
+</head>
+<link rel="stylesheet" href="assets/css/navy.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navybar">
+        <div id="navy-collapse" class="navy-collapse">
+            <ul class="links">
+                <li class="link active"><a id="home-btn" href="#home">Home</a></li>
+                <li class="link"><a id="about-btn" href="#about">About</a></li>
+                <li class="link"><a id="port-btn" href="#portfolio">Portfolio</a></li>
+                <li class="link"><a id="contact-btn" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="button" onclick="collapse(this)">
+            <span class="bar-1"></span>
+            <span class="bar-2"></span>
+            <span class="bar-3"></span>
+        </div>
+    </nav>
+    <!-- Navbar ends-->
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- SECTION 1: -->
+        <div id="home" class="section-1">
+            <div class="text">
+                <div class="line-1">HELLO,</div>
+                <div class="line-2">I'm Dhaval Maru</div>
+            </div>
+            <div class="photo"><img src="assets/resources/profile.png" alt=""></div>
+        </div>
+        <!-- Section 1: end -->
+
+
+        <!-- SECTION 2: About -->
+        <div id="about" class="section-2">
+            <div class="sec-2-top">
+                <div class="sec-2-title">About Me</div>
+            <div class="desp">I'm Dhaval Maru, a web developer passionate about creating
+                unique and engaging online experiences. With expertise in
+                web design, development, and maintenance, I work closely
+                with clients to bring their vision to life. Explore my portfolio
+                and see how I can help take your online presence to the next
+                level.</div>
+            </div>
+            <div class="sec-2-bottom">
+                <div class="about-nav">
+                    <li id="exp-btn" class="about-link active" onclick="changeexp(this)">Experience</li>
+                    <li id="edu-btn" class="about-link " onclick="changeedu(this)">Education</li>
+                    <li id="skills-btn" class="about-link " onclick="changeskill(this)">Skills</li>
+                </div>
+                <div class="about-display">
+                    <!-- Experience part -->
+                    <div id="experience" class="about-card active">
+                        <div class="exp-card">
+                            <div class="exp-year">Jan 2022 - Present</div>
+                            <div class="exp-company">Freelancer</div>
+                            <div class="exp-position">Web Developer | Graphic Designer</div>
+                        </div>
+                        <div class="exp-card">
+                            <div class="exp-year">Jul 2022 - Present</div>
+                            <div class="exp-company">Swastik Furnishing</div>
+                            <div class="exp-position">Social Media Manager</div>
+                        </div>
+                    </div>
+                    <!-- Experience part end -->
+    
+                    <!-- Education part -->
+                    <div id="education" class="about-card">
+                        <div class="edu-card">
+                            <div class="edu-year">2020 - 2024</div>
+                            <div class="edu-course-name">B.E. Computer Science Engineering (AIML)</div>
+                            <div class="edu-inst-name">New L. J. Institute of Engineering and Technology, ahmedabad</div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-year">2023</div>
+                            <div class="edu-course-name">Google UX Design Professional Certificate</div>
+                            <div class="edu-inst-name">by Google Career Certificates</div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-year">2022</div>
+                            <div class="edu-course-name">The Web Developer Bootcamp 2022</div>
+                            <div class="edu-inst-name">by Udemy(Colt Steele)</div>
+                        </div>
+                    </div>
+                    <!-- Education part end -->
+    
+                    <!-- Skills part -->
+                    <div id="skills" class="about-card">
+                        <div class="skill-card">
+                            <div class="skill-title">Webpage Designing</div>
+                            <div class="skill-bar">
+                                <div class="s-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="s-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">UI Frameworks</div>
+                            <div class="skill-bar">
+                                <div class="s-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Wordpress</div>
+                            <div class="skill-bar">
+                                <div class="s-70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Illustration Design</div>
+                            <div class="skill-bar">
+                                <div class="s-80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Motion Graphic</div>
+                            <div class="skill-bar">
+                                <div class="s-65"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills part end -->
+                </div>
+            </div>
+            
+        </div>
+        <!-- Section 2 end-->
+
+        <!-- Section 3: Portfolio -->
+        <div id="portfolio" class="section-3">
+            <div class="sec-3-title">Portfolio</div>
+            <div class="sec-3-content">
+                <div class="portfolio-row">
+                    <div class="portfolio-card card-1">
+                        <div class="project-name">Bark International</div>
+                        <div class="project-img" onclick="window.open('https://www.behance.net/gallery/171644327/Bark-International-Perfume-Brand-Brand-Identity')"><img src="assets/resources/BI.png" alt="Bark International"></div>
+                    </div>
+                    <div class="portfolio-card card-2">
+                        <div class="project-name">Todoist</div>
+                        <div class="project-img" onclick="window.open('https://todoistbydsm.000webhostapp.com/index.html')"><img src="assets/resources/todoist.jpg" alt="Todoist"></div>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-card card-3">
+                        <div class="project-name">Elite Decor Logo Design</div>
+                        <div class="project-img" onclick="window.open('https://www.behance.net/gallery/160580495/Elite-Decor-Logo-Design-Mockup')"><img src="assets/resources/Elite-Decor.jpg" alt="Elite Decor"></div>
+                    </div>
+                    <div class="portfolio-card card-3">
+                        <div class="project-name">The Busy Bean Logo Design</div>
+                        <div class="project-img" onclick="window.open('https://www.behance.net/gallery/160336743/The-Bean-Bean-Coffee-Shop-Logo-Design')"><img src="assets/resources/Busy-Bean.jpg" alt="Elite Decor"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Section 3 end -->
+
+        <!-- Section 4: Services -->
+       
+        <!-- Section 4 end-->
+
+        <!-- Section 5: Follow Icon-->
+        <div id="contact" class="section-5">
+            <div class="social-text">Follow me: </div>
+            <div class="social-media">
+                <img src="assets/resources/behance.svg" alt="" onclick="window.open('https://www.behance.net/dhaval_maru')">
+                <img src="assets/resources/insta.svg" alt="" onclick="window.open('https://www.instagram.com/pixel.dhaval/')">
+                <img src="assets/resources/linkedin.svg" alt="" onclick="window.open('https://www.linkedin.com/in/dhawal-shashikant-maru/')">
+            </div>
+        </div>
+        <!-- Section 5 end -->
+    </div>
+
+
+    <script src="assets/js/navy.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+</body>
+
+</html>
