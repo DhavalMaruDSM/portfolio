@@ -1,5 +1,5 @@
-function collapse(el) {
+function collapse() {
     var navy_collapse = document.getElementById('navy-collapse');
-    el.classList.toggle("opened");
+    document.getElementById('hamburger-btn').classList.toggle("opened");
     navy_collapse.classList.toggle('opened');
 }
