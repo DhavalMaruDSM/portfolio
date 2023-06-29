@@ -9,7 +9,11 @@
 </head>
 <link rel="stylesheet" href="assets/css/navy.css">
 <link rel="stylesheet" href="assets/css/style.css">
-
+<style>
+    .hidden {
+      display: none;
+    }
+  </style>
 
 <body>
 
@@ -33,7 +37,7 @@
     <!-- Navbar ends-->
 
     <!-- Main Content -->
-    <div class="container">
+    <div id="content" class="container hidden">
 
         <!-- SECTION 1: -->
         <div id="home" class="section-1">
@@ -190,7 +194,12 @@
         <!-- Section 5 end -->
     </div>
 
-
+    <script>
+        window.addEventListener("load", function() {
+          var content = document.getElementById("content");
+          content.classList.remove("hidden");
+        });
+      </script>
     <script src="assets/js/navy.js"></script>
     <script src="assets/js/app.js"></script>
     
